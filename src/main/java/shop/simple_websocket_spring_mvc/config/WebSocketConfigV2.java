@@ -26,4 +26,6 @@ public class WebSocketConfigV2 implements WebSocketMessageBrokerConfigurer {
     public void configureClientInboundChannel(ChannelRegistration registration) {
         registration.interceptors(new MyChannelInterceptor());
     }
+
+
 }
