@@ -20,6 +20,7 @@ public class WebSocketConfigV2 implements WebSocketMessageBrokerConfigurer {
     public void configureMessageBroker(MessageBrokerRegistry config) {
         config.setApplicationDestinationPrefixes("/app");
         config.enableSimpleBroker("/topic", "/queue");
+        config.setPreservePublishOrder(true);
     }
 
     @Override
